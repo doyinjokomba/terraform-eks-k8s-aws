@@ -2,6 +2,10 @@
 # Create EKS Cluster - Final Output
 #
 
+
+
+
+
 output "cluster_endpoint" {
   description = "Cluster endpoint addresses"
   value = module.eks.cluster_endpoint
@@ -10,6 +14,7 @@ output "cluster_endpoint" {
 output "kubeconfig_certificate_authority_data" {
   description = "Certificate Authority"
   value = module.eks.kubeconfig_certificate_authority_data
+  
 }
 
 output "region" {
